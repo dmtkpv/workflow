@@ -7,7 +7,7 @@
     let curr = 0;
 
     function toggle (index, active) {
-        $sections[index].style.display = active ? 'block' : 'none';
+        $sections[index].style.display = active ? 'block' : '';
         if (active) $videos[index].play();
         else {
             $videos[index].pause();
