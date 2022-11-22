@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trello Workflow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="nav">
+        <svg viewBox="0 0 24 24">
+            <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+        </svg>
+    </a>
+    <main>
+
+        <section>
+            <h1><b>1. Trello</b>: Create tasks.</h1>
+            <video controls muted loop src="videos/1.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>2. Trello</b>: Prioritize tasks.</h1>
+            <video controls muted loop src="videos/2.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>3. Trello</b>: I start the task with the highest priority.</h1>
+            <video controls muted loop src="videos/3.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>4. Git</b>: I create a new branch <pre>LMS-ID</pre> from the <pre>main</pre> branch.</h1>
+            <video controls muted loop src="videos/4.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>5. Git</b>: I make changes and push them to Bitbucket.</h1>
+            <video controls muted loop src="videos/5.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>6. Trello</b>: I move the ticket to Done.</h1>
+            <video controls muted loop src="videos/6.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>7. Bitbucket</b>: I deploy the new branch.</h1>
+            <video controls muted loop src="videos/7.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>8. Trello</b>: I add an instance label and move the ticket to Testing.</h1>
+            <video controls muted loop src="videos/8.mp4"></video>
+            <p>"Unapproved" label added automatically.</p>
+        </section>
+
+        <section>
+            <h1><b>9. Trello</b>: QA changes the label after testing.</h1>
+            <video controls muted loop src="videos/9.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>10. Trello</b>: PM moves the ticket to Syncing (Syncer & API engin).</h1>
+            <video controls muted loop src="videos/10.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>11. Trello</b>: PM moves the ticket to Releasing.</h1>
+            <video controls muted loop src="videos/11.mp4"></video>
+            <p>Label changes to "Unapproved" because it needs to be tested on staging.</p>
+            <p>Date added for order. The order in Releasing list cannot be changed. <a href="/#21">See Annex 2.</a></p>
+        </section>
+
+        <section>
+            <h1><b>12. Bitbucket</b>: I create a pull request to merge the task branch into the <pre>main</pre> branch.</h1>
+            <video controls muted loop src="videos/12.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>13. Bitbucket</b>: Other developers approve the PR and merge the branch.</h1>
+            <video controls muted loop src="videos/13.mp4"></video>
+            <p>After merging the branch will be deployed to the staging instance.</p>
+        </section>
+
+        <section>
+            <h1><b>14. Trello</b>: Developers add <pre>staging</pre> label to indicate that the task is deployed and ready for retesting.</h1>
+            <video controls muted loop src="videos/14.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>15. Trello</b>: QA changes the label after retesting.</h1>
+            <video controls muted loop src="videos/15.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>16. Git</b>: I create a new <pre>release</pre> branch from the <pre>main</pre> branch and push it to Bitbucket.</h1>
+            <video controls muted loop src="videos/16.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>17. Bitbucket</b>: I create a pull request to merge the <pre>release</pre> branch into the <pre>production</pre> branch.</h1>
+            <video controls muted loop src="videos/17.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>18. Bitbucket</b>: Other developers approve the PR and merge the release.</h1>
+            <video controls muted loop src="videos/18.mp4"></video>
+            <p>After merging the branch will be deployed to production.</p>
+        </section>
+
+        <section>
+            <h1><b>19. Trello</b>: The task is released.</h1>
+            <video controls muted loop src="videos/19.mp4"></video>
+            <p>All labels are removed automatically.</p>
+        </section>
+
+        <section>
+            <h1><b>Annex 1. Trello</b>: Decline task.</h1>
+            <video controls muted loop src="videos/20.mp4"></video>
+        </section>
+
+        <section>
+            <h1><b>Annex 2. Trello</b>: A new ticket in the Releasing list will be released after the ones that already added.</h1>
+            <video controls muted loop src="videos/21.mp4"></video>
+            <p>The order in Releasing list cannot be changed.</p>
+            <p>Tickets at the top will be released first.</p>
+        </section>
+
+    </main>
+    <a class="nav">
+        <svg viewBox="0 0 24 24">
+            <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+        </svg>
+    </a>
+    <script src="scripts.js"></script>
+</body>
+</html>
